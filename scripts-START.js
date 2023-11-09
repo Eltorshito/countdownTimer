@@ -1,4 +1,4 @@
-let countdown; // Déclaration de countdown en dehors de la fonction timer
+let countdown;
 
 const timerDisplay = document.querySelector('.display__time-left');
 const endTime = document.querySelector('.display__end-time');
@@ -58,6 +58,7 @@ customForm.addEventListener('submit', function(event) {
 
   const minutes = this.minutes.value;
   const seconds = parseInt(minutes) * 60;
+console.log(minutes);
 
   timer(seconds);
 });
